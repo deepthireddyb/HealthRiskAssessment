@@ -5,11 +5,6 @@ This project analyzes a health risk dataset to identify patterns and clusters am
 
 ## Technical Details
 
-**Libraries Used:**
-
-*   **pandas:** Data manipulation and analysis.
-*   **numpy:** Numerical operations.
-*   **matplotlib:** Data visualization.
 *   **seaborn:** Enhanced data visualization.
 *   **scikit-learn:** Machine learning algorithms (preprocessing, clustering, metrics).
 *   **kmodes:** KModes clustering algorithm.
@@ -18,13 +13,13 @@ This project analyzes a health risk dataset to identify patterns and clusters am
 
 **Data Preprocessing:**
 
-1.  **Data Cleaning:** Handles missing values and outliers (to be implemented).
+1.  **Data Cleaning:** Handles missing values and outliers.
 2.  **Feature Engineering:**
     *   Extracts systolic and diastolic blood pressure from the 'Blood Pressure' column.
-    *   Creates a 'High\_BP' indicator variable.
+    *   Creates a 'High_BP' indicator variable.
     *   Converts categorical features ('Mental Health', 'Food/Nutrition', other categorical columns) to numerical representations using Label Encoding.
 3.  **Scaling:** Applies standardization using StandardScaler to ensure features contribute equally to the clustering process.
-4.  **Feature Selection:** Selects relevant features for clustering ('Age', 'Food/Nutrition', 'bp\_systolic', 'bp\_diastolic', 'Mental Health', 'Physical Activity', 'High\_BP').
+4.  **Feature Selection:** Selects relevant features for clustering ('Age', 'Food/Nutrition', 'bp_systolic', 'bp_diastolic', 'Mental Health', 'Physical Activity', 'High_BP').
 
 
 **Clustering Algorithms:**
@@ -47,19 +42,17 @@ Uses matplotlib and seaborn to create visualizations such as bar plots, heatmaps
 
 ## Results and Output
 
-The analysis produces cluster assignments for each individual, allowing for segmentation of the population based on health risk profiles.  Results are saved to an Excel file named 'Results\_RiskAssessment\_Clusters.xlsx'.
+The analysis produces cluster assignments for each individual, allowing for segmentation of the population based on health risk profiles.   
 
 
-## Future Improvements
+## Future Improvements (Considering for future scope)
 
 *   **Robust Outlier Handling:** Implement more sophisticated outlier detection and handling methods.
 *   **Missing Value Imputation:** Develop strategies for handling missing values in a more statistically sound way.
 *   **Hyperparameter Tuning:** Perform a more comprehensive hyperparameter tuning for KMeans, KModes and hierarchical clustering algorithms to optimize cluster quality.
-*   **Alternative Clustering Algorithms:** Explore other clustering techniques like DBSCAN to compare results.
-*   **Feature Importance Analysis:** Analyze feature importance to understand the key drivers of clustering.
+*   **Alternative Clustering Algorithms:** Explore other clustering techniques like DBSCAN to compare results. 
 *   **Model Evaluation:** Use more robust metrics to evaluate the performance of the clustering algorithms (e.g. Davies-Bouldin Index, Calinski-Harabasz Index).
-*   **Interactive Visualizations:** Create interactive visualizations to enhance user exploration of the data and results.
-*   **Integration with Google Sheets:** Automate the process of exporting results directly to Google Sheets.
+*   **Interactive Visualizations:** Create interactive visualizations to enhance user exploration of the data and results. 
 *   **Detailed Reporting:** Generate a more detailed report that summarizes the findings and provides actionable insights.
 *   **Predictive Modeling:** Integrate the cluster assignments into predictive models to anticipate health risks.
 
